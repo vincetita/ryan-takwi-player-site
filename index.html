@@ -1,0 +1,292 @@
+export default function RyanTakwiPlayerWebsite() {
+  const career = [
+    {
+      years: "2019",
+      club: "Corinthians",
+      note: "Early technical foundation and attacking development.",
+    },
+    {
+      years: "2020–2022",
+      club: "Cwmbrân Celtic Academy",
+      note: "Structured academy development, tactical awareness, and positional growth.",
+    },
+    {
+      years: "2023–2024",
+      club: "PJSS",
+      note: "Refined finishing, physical development, and attacking output.",
+    },
+    {
+      years: "2024–Present",
+      club: "Newport Saints (Senior Team)",
+      note: "Competing at senior level against physically and tactically mature players.",
+    },
+  ];
+
+  const strengths = [
+    "Physical presence and hold-up play",
+    "Finishing with both feet",
+    "Strong attacking positioning",
+    "Versatility across attacking roles",
+    "Composure in the final third",
+    "Adaptation to senior football",
+  ];
+
+  const stats = [
+    { label: "Age", value: "18" },
+    { label: "Height", value: "180 cm" },
+    { label: "Weight", value: "85 kg" },
+    { label: "Preferred Foot", value: "Right" },
+    { label: "Nationality", value: "Spain" },
+    { label: "Base", value: "Wales, UK" },
+  ];
+
+  return (
+    <main className="min-h-screen bg-black text-white">
+      <section className="relative overflow-hidden border-b border-orange-500/20 bg-gradient-to-br from-black via-neutral-900 to-black">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute -left-20 top-10 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
+          <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-orange-500/10 blur-3xl" />
+        </div>
+
+        <div className="relative mx-auto grid max-w-7xl gap-10 px-6 py-14 md:px-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:py-20">
+          <div>
+            <div className="mb-5 inline-flex items-center rounded-full border border-orange-500/30 px-4 py-1 text-sm text-white/80">
+              Senior Team Player • Striker / Attacking Midfielder
+            </div>
+
+            <h1 className="max-w-4xl text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+              Ryan Chick Sambang Takwi
+            </h1>
+
+            <p className="mt-4 max-w-2xl text-lg leading-8 text-white/80 sm:text-xl">
+              A powerful, versatile attacking player competing at senior level,
+              combining physical strength, composure, and two-footed finishing to
+              impact games in the final third.
+            </p>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href="#highlights"
+                className="rounded-2xl bg-orange-500 px-6 py-3 font-semibold text-black transition hover:scale-[1.02]"
+              >
+                Watch Highlights
+              </a>
+              <a
+                href="#contact"
+                className="rounded-2xl border border-white/20 px-6 py-3 font-semibold text-white transition hover:bg-orange-500/20"
+              >
+                Contact
+              </a>
+            </div>
+
+            <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:max-w-2xl">
+              {stats.map((item) => (
+                <div
+                  key={item.label}
+                  className="rounded-2xl border border-orange-500/20 bg-orange-500/10 p-4 backdrop-blur"
+                >
+                  <div className="text-xs uppercase tracking-[0.2em] text-white/50">
+                    {item.label}
+                  </div>
+                  <div className="mt-2 text-lg font-semibold">{item.value}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mx-auto w-full max-w-md">
+            <div className="overflow-hidden rounded-[2rem] border border-orange-500/20 bg-orange-500/10 shadow-2xl backdrop-blur">
+              <div className="aspect-[4/5] w-full relative bg-[linear-gradient(135deg,#ff6a00,#0a0a0a)] p-6">
+                <img src="/newport-saints-logo.png" alt="watermark" className="absolute inset-0 m-auto h-40 w-40 opacity-10" />
+                <div className="flex h-full flex-col justify-between rounded-[1.5rem] border border-orange-500/20 bg-gradient-to-b from-orange-500/20 to-transparent p-6">
+                  <div>
+                    <div className="text-sm uppercase tracking-[0.25em] text-white/55">
+                      Player Card
+                    </div>
+                    <div className="mt-3 text-3xl font-black leading-tight flex items-center gap-3">
+                      <img
+                        src="/newport-saints-logo.png"
+                        alt="Newport Saints Logo"
+                        className="h-10 w-10 object-contain"
+                      />
+                      <span>Ryan Takwi</span>
+                    </div>
+                    <div className="mt-2 text-white/70">Striker • Attacking Midfielder</div>
+                  </div>
+
+                  <div className="space-y-3 text-sm text-white/80">
+                    <div className="flex items-center justify-between border-b border-orange-500/20 pb-2">
+                      <span>Current Club</span>
+                      <span className="font-semibold flex items-center gap-2">
+                      <img
+                        src="/newport-saints-logo.png"
+                        alt="Newport Saints"
+                        className="h-5 w-5 object-contain"
+                      />
+                      Newport Saints
+                    </span>
+                    </div>
+                    <div className="flex items-center justify-between border-b border-orange-500/20 pb-2">
+                      <span>Level</span>
+                      <span className="font-semibold">Senior Team</span>
+                    </div>
+                    <div className="flex items-center justify-between border-b border-orange-500/20 pb-2">
+                      <span>Foot</span>
+                      <span className="font-semibold">Right / Both Active</span>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span>Date of Birth</span>
+                      <span className="font-semibold">26 Nov 2007</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-14 md:px-10">
+        <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="rounded-[2rem] border border-orange-500/20 bg-orange-500/5 p-8 shadow-xl">
+            <p className="text-sm uppercase tracking-[0.25em] text-white/45">Player Profile</p>
+            <h2 className="mt-3 text-3xl font-bold">Modern attacking presence</h2>
+            <p className="mt-5 text-lg leading-8 text-white/80">
+              Ryan is a physically powerful and technically capable forward who
+              operates primarily as a striker, while also being effective in a
+              deeper attacking midfield role. His game is built on strength,
+              composure, versatility, and a natural presence in dangerous areas.
+            </p>
+            <p className="mt-5 text-lg leading-8 text-white/80">
+              Already gaining experience in senior football, he is developing in
+              an environment that demands tactical maturity, intensity, and
+              resilience against experienced opponents.
+            </p>
+          </div>
+
+          <div className="rounded-[2rem] border border-orange-500/20 bg-orange-500/5 p-8 shadow-xl">
+            <p className="text-sm uppercase tracking-[0.25em] text-white/45">Key Strengths</p>
+            <div className="mt-5 grid gap-3">
+              {strengths.map((strength) => (
+                <div
+                  key={strength}
+                  className="rounded-2xl border border-orange-500/20 bg-orange-500/10 px-4 py-4 text-white/85"
+                >
+                  {strength}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-orange-500/20 bg-orange-500/5">
+        <div className="mx-auto max-w-7xl px-6 py-14 md:px-10">
+          <div className="max-w-3xl">
+            <p className="text-sm uppercase tracking-[0.25em] text-white/45">Career Timeline</p>
+            <h2 className="mt-3 text-3xl font-bold">Development journey</h2>
+          </div>
+
+          <div className="mt-10 grid gap-5 lg:grid-cols-2">
+            {career.map((item) => (
+              <div
+                key={`${item.years}-${item.club}`}
+                className="rounded-[1.75rem] border border-orange-500/20 bg-black/70 p-6 shadow-lg"
+              >
+                <div className="text-sm uppercase tracking-[0.2em] text-white/45">{item.years}</div>
+                <h3 className="mt-3 text-2xl font-semibold">{item.club}</h3>
+                <p className="mt-3 leading-7 text-white/72">{item.note}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="highlights" className="mx-auto max-w-7xl px-6 py-14 md:px-10">
+        <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-start">
+          <div>
+            <p className="text-sm uppercase tracking-[0.25em] text-white/45">Highlights</p>
+            <h2 className="mt-3 text-3xl font-bold">Video showcase</h2>
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-white/80">
+              Add Ryan’s edited highlight video here to give scouts, agents, and
+              clubs an immediate view of his finishing, movement, physical
+              presence, and attacking contribution.
+            </p>
+
+            <div className="mt-8 overflow-hidden rounded-[2rem] border border-orange-500/20 bg-black shadow-2xl">
+              <div className="aspect-video w-full">
+                <iframe
+                  className="h-full w-full"
+                  src="https://www.youtube.com/embed/DsaSwNbsmDQ"
+                  title="Ryan Takwi Highlights"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-[2rem] border border-orange-500/20 bg-orange-500/5 p-8 shadow-xl">
+            <p className="text-sm uppercase tracking-[0.25em] text-white/45">Scout Snapshot</p>
+            <div className="mt-5 space-y-5">
+              <div>
+                <div className="text-sm text-white/50">Primary Position</div>
+                <div className="mt-1 text-xl font-semibold">Striker</div>
+              </div>
+              <div>
+                <div className="text-sm text-white/50">Secondary Position</div>
+                <div className="mt-1 text-xl font-semibold">Attacking Midfielder</div>
+              </div>
+              <div>
+                <div className="text-sm text-white/50">Current Environment</div>
+                <div className="mt-1 text-xl font-semibold">Senior Football</div>
+              </div>
+              <div>
+                <div className="text-sm text-white/50">Profile Type</div>
+                <div className="mt-1 text-xl font-semibold">Physical + Technical Attacker</div>
+              </div>
+              <div>
+                <div className="text-sm text-white/50">Career Objective</div>
+                <div className="mt-1 text-xl font-semibold">Progress into a professional environment</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-orange-500/20 bg-gradient-to-b from-neutral-950 to-black">
+        <div className="mx-auto max-w-7xl px-6 py-14 md:px-10">
+          <div className="rounded-[2rem] border border-orange-500/20 bg-orange-500/10 p-8 shadow-2xl lg:p-10">
+            <div className="grid gap-8 lg:grid-cols-[1fr_0.8fr] lg:items-center">
+              <div>
+                <p className="text-sm uppercase tracking-[0.25em] text-white/45">Contact</p>
+                <h2 id="contact" className="mt-3 text-3xl font-bold">
+                  Available for trials and opportunities
+                </h2>
+                <p className="mt-5 max-w-2xl text-lg leading-8 text-white/80">
+                  For club enquiries, trial invitations, scouting interest, or
+                  representation opportunities, use the contact details below.
+                </p>
+              </div>
+
+              <div className="grid gap-4">
+                <div className="rounded-2xl border border-orange-500/20 bg-black/40 p-5">
+                  <div className="text-sm text-white/50">Email</div>
+                  <div className="mt-2 text-lg font-semibold">vince.tita@gmail.com</div>
+                </div>
+                <div className="rounded-2xl border border-orange-500/20 bg-black/40 p-5">
+                  <div className="text-sm text-white/50">Phone</div>
+                  <div className="mt-2 text-lg font-semibold">+44 7711 084721</div>
+                </div>
+                <div className="rounded-2xl border border-orange-500/20 bg-black/40 p-5">
+                  <div className="text-sm text-white/50">Highlight Video</div>
+                  <div className="mt-2 text-lg font-semibold">https://www.youtube.com/embed/DsaSwNbsmDQ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
