@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ryan Sambang Takwi | Striker | Attacking Midfielder</title>
+<meta name="description" content="Ryan Sambang Takwi – Striker | Attacking Midfielder. Senior level player. Highlights, profile and contact."/>
+<link rel="preconnect" href="https://www.youtube.com">
+<link rel="preconnect" href="https://i.ytimg.com">
+
+<style>
+:root{--bg:#050505;--bg2:#0e0e0e;--accent:#ff7a00;--accent2:#ffb347;--soft:rgba(255,122,0,0.12);--line:rgba(255,122,0,0.35);--text:#f5f5f5;--muted:#bdbdbd}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial, Helvetica, sans-serif;color:var(--text);background:radial-gradient(circle at 10% 0%, rgba(255,122,0,0.18), transparent 30%),radial-gradient(circle at 90% 100%, rgba(255,122,0,0.12), transparent 30%),linear-gradient(180deg,var(--bg),var(--bg2))}
+.container{max-width:1100px;margin:auto;padding:20px}
+
+/* NAV */
+.nav-wrap{position:sticky;top:0;z-index:1000;backdrop-filter:blur(14px);background:rgba(5,5,5,0.72);border-bottom:1px solid var(--line)}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:14px 20px}
+.nav-brand{display:flex;align-items:center;gap:14px}
+.nav-brand img{width:46px;height:46px;object-fit:contain;border-radius:50%;background:rgba(255,255,255,0.04);padding:4px;box-shadow:0 0 18px rgba(255,122,0,0.18)}
+.nav-brand-text{display:flex;flex-direction:column;line-height:1.1}
+.nav-brand-text strong{letter-spacing:.5px;font-size:16px}
+.nav-brand-text span{color:var(--muted);font-size:12px}
+.nav-menu{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.nav-menu a{color:var(--muted);font-size:14px;padding:10px 14px;border-radius:999px;border:1px solid transparent;transition:.2s ease}
+.nav-menu a:hover{color:#fff;background:rgba(255,122,0,0.10);border-color:var(--line)}
+.nav-menu a.cta{color:#111;background:linear-gradient(135deg,var(--accent),var(--accent2));font-weight:700}
+.nav-menu a.cta:hover{transform:translateY(-2px)}
+
+@media (max-width:700px){.nav{flex-direction:column;align-items:flex-start}.nav-menu{width:100%}}
+
+/* HERO */
+.hero{padding:70px 20px 60px;position:relative;background:linear-gradient(rgba(5,5,5,0.7), rgba(5,5,5,0.9)), url('assets/images/ryan-hero.jpg') center/cover no-repeat;border-bottom:1px solid var(--line)}
+.hero h1{font-size:clamp(42px,7vw,72px);margin:0 0 10px;letter-spacing:-2px}
+.hero p{color:var(--muted);max-width:650px}
+.btn{display:inline-block;margin-top:25px;padding:14px 26px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#111;border-radius:14px;font-weight:700;transition:.2s}
+.btn:hover{transform:translateY(-3px)}
+
+/* STATS */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-top:30px}
+.card{background:var(--soft);padding:16px;border-radius:14px;border:1px solid var(--line);transition:.2s}
+.card:hover{transform:translateY(-5px);background:rgba(255,122,0,0.25)}
+
+/* PLAYER CARD */
+.player-card{margin-top:50px;text-align:center;position:relative}
+.player-card img.main{width:320px;border-radius:20px;border:2px solid var(--accent);box-shadow:0 0 50px rgba(255,122,0,0.5)}
+.player-card img.logo{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:90px;opacity:.12}
+
+/* SECTION */
+.section{padding:70px 20px;border-top:1px solid var(--line)}
+h2{font-size:32px;margin-bottom:10px}
+p{line-height:1.7}
+
+/* TIMELINE */
+.timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;margin-top:20px}
+
+/* VIDEO */
+.video-wrapper{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:18px;box-shadow:0 0 40px rgba(0,0,0,0.5)}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:none}
+
+/* VIDEO OVERLAY PREVIEW */
+.video-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35));cursor:pointer}
+.play-btn{width:86px;height:86px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.5);transition:.2s}
+.play-btn:after{content:"▶";font-size:30px;color:#111;margin-left:6px}
+.play-btn:hover{transform:scale(1.06)}
+
+/* SKILLS */
+.skill{margin-top:14px}
+.bar{height:8px;background:#222;border-radius:10px;margin-top:5px;overflow:hidden}
+.fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+
+/* CONTACT */
+.contact .card{font-size:14px}
+.contact a{color:#fff;text-decoration:underline}
+
+/* FOOTER */
+.footer{text-align:center;padding:40px;color:#777}
+
+/* FLOATING CTA */
+.floating-cta{position:fixed;right:18px;bottom:18px;z-index:999}
+.floating-cta a{display:inline-block;padding:12px 16px;border-radius:999px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#111;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+
+/* ANIMATIONS */
+.reveal{opacity:0;transform:translateY(40px);transition:1s}
+.reveal.active{opacity:1;transform:translateY(0)}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav-wrap">
+  <div class="container nav">
+    <div class="nav-brand">
+      <img src="assets/images/newport-saints-logo.png" alt="Newport Saints logo">
+      <div class="nav-brand-text">
+        <strong>Ryan Sambang Takwi</strong>
+        <span>Striker • Attacking Midfielder</span>
+      </div>
+    </div>
+    <div class="nav-menu">
+      <a href="#profile">Profile</a>
+      <a href="#video">Highlights</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/Ryan-Takwi-CV.pdf" download class="cta">Download CV</a>
+      <a href="#video" class="cta">Watch Video</a>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="container hero">
+  <h1>RYAN</h1>
+  <p>Striker / Attacking Midfielder • Age 18 • Senior Level Player</p>
+  <p>Explosive forward with physical presence, composure and two-footed finishing. Competing at senior level and ready for the next opportunity.</p>
+  <a href="#video" class="btn">Watch Highlights</a>
+
+  <div class="grid">
+    <div class="card">Age: 18</div>
+    <div class="card">Height: 180 cm</div>
+    <div class="card">Weight: 85 kg</div>
+    <div class="card">Foot: Right | Left</div>
+    <div class="card">Spain</div>
+    <div class="card">Wales, UK</div>
+  </div>
+
+  <div class="player-card">
+    <img class="logo" src="assets/images/newport-saints-logo.png" alt="logo">
+    <img class="main" src="assets/images/ryan-player-card.png" alt="player card">
+  </div>
+</div>
+
+<!-- PROFILE -->
+<div id="profile" class="container section reveal">
+  <h2>Player Profile</h2>
+  <p>Ryan is a physically dominant and technically capable striker. His game is built on strength, positioning and finishing. Already playing senior football, he is adapting quickly to high-level physical and tactical demands.</p>
+
+  <div class="skill">Finishing<div class="bar"><div class="fill" style="width:87%"></div></div></div>
+  <div class="skill">Physical<div class="bar"><div class="fill" style="width:88%"></div></div></div>
+  <div class="skill">Movement<div class="bar"><div class="fill" style="width:85%"></div></div></div>
+  <div class="skill">Intensity<div class="bar"><div class="fill" style="width:86%"></div></div></div>
+</div>
+
+<!-- TIMELINE -->
+<div class="container section reveal">
+  <h2>Career</h2>
+  <div class="timeline">
+    <div class="card">2019 - Corinthians</div>
+    <div class="card">2020–2022 - Cwmbran Celtic Academy</div>
+    <div class="card">2023–2024 - PJSS</div>
+    <div class="card">2024–Present - Newport Saints</div>
+  </div>
+</div>
+
+<!-- VIDEO -->
+<div id="video" class="container section video reveal">
+  <h2>Highlights</h2>
+  <div class="video-wrapper" id="videoBox">
+    <div class="video-overlay" id="overlay">
+      <div class="play-btn"></div>
+    </div>
+    <iframe id="yt" src="https://www.youtube.com/embed/DsaSwNbsmDQ?rel=0" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="container section contact reveal">
+  <h2>Contact</h2>
+  <div class="grid">
+    <div class="card">Email: <a href="mailto:vince.tita@gmail.com">vince.tita@gmail.com</a></div>
+    <div class="card">Phone: <a href="tel:+447711084721">+44 7711 084721</a></div>
+    <div class="card">Available for trials & opportunities</div>
+  </div>
+</div>
+
+<div class="footer">Ryan Sambang Takwi • Striker | Attacking Midfielder • Newport Saints</div>
+
+<div class="floating-cta">
+  <a href="assets/Ryan-Takwi-CV.pdf" download>Download CV</a>
+</div>
+
+<script>
+// scroll reveal
+const els=document.querySelectorAll('.reveal');
+window.addEventListener('scroll',()=>{
+  els.forEach(el=>{
+    const top=el.getBoundingClientRect().top;
+    if(top<window.innerHeight-100){el.classList.add('active')}
+  })
+});
+
+// play overlay
+const overlay=document.getElementById('overlay');
+const yt=document.getElementById('yt');
+overlay.addEventListener('click',()=>{
+  yt.src = yt.src + '&autoplay=1&mute=1';
+  overlay.style.display='none';
+});
+</script>
+
+</body>
+</html>
